@@ -1,0 +1,93 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // Vim plugins
+  "vim.easymotion": true,
+  "vim.sneak": true,
+  "vim.surround": true,
+  // Vim leader key
+  "vim.leader": "<Space>",
+  // Vim Insert KeyBidinds
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+
+  // Vim normal KeyBidinds
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<leader>", "g", "d"],
+      "commands": ["editor.action.revealDefinition"]
+    },
+    {
+      "before": ["<leader>", "g", "i"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    {
+      "before": ["<leader>", "f", "f"],
+      "commands": ["workbench.action.findInFiles"]
+    },
+    {
+      "before": ["<leader>", "c"],
+      "commands": ["editor.action.commentLine"]
+    },
+    {
+      "before": ["<S-m>"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["<leader>", "r", "r"],
+      "commands": ["editor.action.refactor"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "j"],
+      "after": ["<leader>", "<leader>", "j"]
+    },
+    {
+      "before": ["<leader>", "k"],
+      "after": ["<leader>", "<leader>", "k"]
+    },
+    {
+      "before": ["<leader>", "s"],
+      "after": ["<leader>", "<leader>", "s"]
+    },
+    {
+      "before": ["<S-l>"],
+      "commands": [":tabn"]
+    },
+    {
+      "before": ["<S-h>"],
+      "commands": [":tabp"]
+    }
+  ],
+  // Vim visual KeyBidinds
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["<leader>", "c"],
+      "commands": ["editor.action.commentLine"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "j"],
+      "after": ["<leader>", "<leader>", "j"]
+    },
+    {
+      "before": ["<leader>", "k"],
+      "after": ["<leader>", "<leader>", "k"]
+    },
+    {
+      "before": ["<leader>", "s"],
+      "after": ["<leader>", "<leader>", "s"]
+    }
+  ],
+  "editor.formatOnSave": true,
+  "vim.useSystemClipboard": true,
+  "[shellscript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorTheme": "Catppuccin Frappé"
+}
